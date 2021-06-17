@@ -1,5 +1,5 @@
 <template>
-  <div class="recommend" v-loading:加载中ing='loading'>
+  <div class="recommend" v-loading:[loadingText]='loading'>
     <scroll class="recommend-content">
       <div>
         <slide v-if="sliders.length" :sliders="sliders"></slide>
